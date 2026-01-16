@@ -1,0 +1,137 @@
+/* =========================
+   🎄 Cart Page Theme
+   ========================= */
+
+/* 전체 섹션 */
+.cart-section {
+    background-color: #FAF9F7;  
+    min-height: 70vh;   /* 화면 높이의 70% */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* =========================
+   🛒 장바구니 테이블 카드
+   ========================= */
+.cart-table {
+    border-radius: 18px;
+    border: none;
+    background-color: #FFFDF8;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+}
+
+.cart-table .table {
+    margin-bottom: 0;
+}
+
+/* 상품 목록 부분 */
+.cart-table thead {
+    background-color: #FFFDF8;
+}
+
+
+.cart-table thead th {
+    border: none;
+    color: #5A3E36;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cart-table tbody tr {
+    border-bottom: 1px solid #EFE6DC;
+    transition: background-color 0.2s ease;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #FAF3EB;
+}
+
+.cart-table tbody td,
+.cart-table tbody th {
+    vertical-align: middle;
+    text-align: center;
+    color: #4A3A32;
+}
+
+/* =========================
+   ➕➖ 수량 버튼
+   ========================= */
+.cart-quantity .btn {
+    background-color: #F4EDE4;
+    border: none;
+    width: 28px;
+    height: 28px;
+}
+
+.cart-quantity .btn i {
+    color: #8B2C2C;
+}
+
+.cart-quantity input {
+    background-color: transparent;
+    font-weight: 600;
+    color: #4A3A32;
+}
+
+/* =========================
+   ❌ 삭제 버튼
+   ========================= */
+.cart-remove-btn {
+    transition: transform 0.15s ease;
+}
+
+.cart-remove-btn:hover {
+    transform: scale(1.1);
+}
+
+.cart-remove-btn i {
+    color: #B84A4A;
+}
+
+.cart-remove-btn:hover i {
+    color: #8B2C2C;
+}
+
+/* =========================
+   💳 결제 요약 박스
+   ========================= */
+.cart-summary {
+    background-color: #FFFDF8 !important;
+    border-radius: 22px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+.cart-summary h2 {
+    color: #8B2C2C;
+    font-weight: 700;
+}
+
+.cart-summary h5 {
+    color: #5A3E36;
+}
+
+.cart-summary p {
+    color: #4A3A32;
+    font-weight: 600;
+}
+
+/* 합계 라인 */
+.cart-summary .border-top,
+.cart-summary .border-bottom {
+    border-color: #EFE6DC !important;
+}
+
+/* =========================
+   🎁 구매 버튼
+   ========================= */
+.cart-buy-btn {
+    background-color: #8B2C2C;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.cart-buy-btn:hover {
+    background-color: #6F1F1F;
+}

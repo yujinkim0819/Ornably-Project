@@ -1,0 +1,45 @@
+/*ratingStar.css*/
+
+.rating_box {
+  display: flex;
+  justify-content: center; /* 가로 가운데 */
+  align-items: center;     /* 세로 가운데 */
+}
+
+/* <div class="rating"> 을 가운데 정렬 + 회색으로 만들기 (별 이외에도 모두 회색으로 바꿈) */
+.rating {
+  position: relative;
+  color: #ddd;		/* 영역 안 텍스트를 회색으로 칠하기 */
+  font-size: 30px; /* 영역 안 모든 텍스트의 크기를 30px로 고정 */
+  text-align: center;	/* 영역 안 가운데 정렬 */
+}
+
+.rating input {
+  /* 
+  회색별 위에 input range바 올려놓기 
+  부모의 영역에 가득 차게 범위 잡기
+  */
+  position: absolute;
+  left: 0;
+  right: 0;
+  
+  width: 100%;
+  height: 100%;
+  opacity: 0;	/*input range 바 숨기기*/
+  cursor: pointer;
+}
+
+/* 노랑 별 영역 */
+.rating_star {
+  width: 0;
+  color: #ffc107;
+  /* 
+  회색별 위에 input range바 올려놓기 
+  부모의 영역에 가득 차게 범위 잡기
+  */
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: hidden; /**/
+  pointer-events: none; /*마우스에 무시당하게 만들어서 밑에있는 input range바를 마우스가 선택하게 만들기*/
+}

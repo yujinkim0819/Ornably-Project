@@ -1,0 +1,322 @@
+CREATE TABLE ITEM (  -- 상품 테이블
+	ITEM_PK INT PRIMARY KEY, -- PK
+	ITEM_NAME VARCHAR(100),    -- 상품명
+	ITEM_PRICE INT,          -- 상품 가격
+	ITEM_STOCK INT,          -- 상품 재고
+	ITEM_DESCRIPTION VARCHAR(3000), -- 상품 설명
+	ITEM_IMAGE_URL VARCHAR(255)    -- 상품 이미지 경로
+);
+
+select * from item;
+
+UPDATE ITEM
+SET ITEM_STOCK = 5
+WHERE ITEM_STOCK <= 0;
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2000, '유광볼 150mm 실버', 7500, 10, '유광볼 150mm 실버 [1P]', '/images/item01.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2001, '유광볼 150mm 레드', 7500, 5, '유광볼 150mm 레드 [1P]', '/images/item02.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2002, '유광볼 60mm/80mm 골드', 3900, 0, '유광볼 60mm/80mm 골드 [6입]', '/images/item03.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2003, '최고급 밀키볼 골드 비즈장식', 9900, 0, '최고급 밀키볼 골드 비즈장식 8CM 3P', '/images/item04.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2004, '우드 버튼장식_별' , 1900, 7, '우드 버튼장식_별', '/images/item05.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2005, '마_솔방울 트리', 2500, 10, '마_솔방울 트리', '/images/item06.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2006, '마_눈사람트리', 2500, 10, '마_눈사람트리', '/images/item07.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2007, '투명볼 레드장화', 3000, 10, '투명볼 레드장화', '/images/item08.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2008, '미니 스커트싼타 체크', 2000, 10, '미니 스커트싼타 체크', '/images/item09.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2009, '미니 빨간리본 곰돌이', 1900, 10, '미니 빨간리본 곰돌이 2입', '/images/item10.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2010, '별_솔잎장식', 4500, 5, '별_솔잎장식2입_G', '/images/item11.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2011, '별_솔잎장식', 2500, 3, '별_솔잎장식2입_G', '/images/item12.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2012, '장식 볼 세트 골드 스노우맨', 29800, 6, '홈트너 크리스마스 오너먼트 트리 꾸미기 데코 장식 볼 세트 골드 스노우맨 70pcs', '/images/item13.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2013, '크리스마스장식 OP-08 투명볼', 13900, 4, '하우쎈스 크리스마스트리 오너먼트 시리즈 크리스마스장식 OP-08 투명볼 8cm 12개', '/images/item14.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2014, '오렌지 곰돌이 빅벤 오너먼트', 9500, 7, '오렌지 곰돌이 빅벤 오너먼트 크리스마스 트리 장식', '/images/item15.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2015, '레드 화이트 아크릴 볼 장식 소품', 1900, 11, '크리스마스 트리 오너먼트 꾸미기 세트 12종 레드 화이트 8cm 아크릴 볼 장식 소품', '/images/item16.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2016, '크리스마스 트리 장식 철재', 6300, 15, '크리스마스 트리 장식 철재 1종 오너먼트 7cm 3색 택1', '/images/item17.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2017, '크라운 유리 트리오너먼트', 2500, 2, '크라운 유리 트리오너먼트 행잉 오브제 크리스마스 트리 장식 소품', '/images/item18.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2018, '리본 오너먼트 레드 벨벳 트리 장식', 4000, 2, '리본 오너먼트 레드 벨벳 트리 장식 통통 리본인형 소품', '/images/item19.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(2019, '리본 불빛 오너먼트', 2500, 3, '크리스마스 리본 불빛 오너먼트', '/images/item20.jpg');
+
+
+
+
+
+
+
+
+
+
+
+-- 1) FK 제약 임시 비활성화
+ALTER TABLE CART DISABLE CONSTRAINT FK_ITEM_CART;
+
+-- 2) ITEM 테이블 PK 변경
+UPDATE ITEM
+SET ITEM_PK = ITEM_PK + 1999
+WHERE ITEM_PK BETWEEN 1 AND 20;
+
+-- 3) CART 테이블 ITEM_PK 변경
+UPDATE CART
+SET ITEM_PK = ITEM_PK + 1999
+WHERE ITEM_PK BETWEEN 1 AND 20;
+
+-- 4) FK 제약 다시 활성화
+ALTER TABLE CART ENABLE CONSTRAINT FK_ITEM_CART;
+
+
+
+
+
+
+
+
+
+
+
+
+-- 이미지 변경
+UPDATE ITEM
+SET ITEM_IMAGE_URL = '/images/item05.jpg'
+WHERE ITEM_PK = 5;
+
+-- 상품명, 가격 변경
+UPDATE ITEM
+SET ITEM_NAME = '우드 버튼장식_별',
+	ITEM_PRICE = 1900
+WHERE ITEM_PK = 5;
+
+
+-- 테이블 드랍
+DROP TABLE ITEM;
+
+-- 테이블 강제 드랍
+DROP TABLE ITEM CASCADE CONSTRAINTS;
+
+-- 시퀀스
+CREATE SEQUENCE ITEM_SEQ
+START WITH 2000
+INCREMENT BY 1
+NOCACHE;
+
+-- 상품 전체 출력 PK최신순 (페이지네이션으로 변경 예정)
+SELECT 
+    ITEM_PK,
+    ITEM_NAME,
+    ITEM_PRICE,
+    ITEM_STOCK,
+    ITEM_IMAGE_URL,
+    AVG_STAR,
+    TOTAL_COUNT
+FROM (
+    SELECT 
+        I.ITEM_PK,
+        I.ITEM_NAME,
+        I.ITEM_PRICE,
+        I.ITEM_STOCK,
+        I.ITEM_IMAGE_URL,
+        NVL(ROUND(AVG(R.REVIEW_STAR), 2), 0) AS AVG_STAR,
+        COUNT(*) OVER() AS TOTAL_COUNT,  -- 전체 행 수
+        ROW_NUMBER() OVER (
+            ORDER BY (CASE WHEN ITEM_STOCK = 0 THEN 1 ELSE 0 END), I.ITEM_PK DESC
+        ) AS RN
+    FROM ITEM I
+    LEFT JOIN REVIEW R
+        ON I.ITEM_PK = R.ITEM_PK
+    GROUP BY 
+        I.ITEM_PK,
+        I.ITEM_NAME,
+        I.ITEM_PRICE,
+        I.ITEM_STOCK,
+        I.ITEM_IMAGE_URL
+) 
+WHERE RN BETWEEN ? AND ?;
+
+-- 상품 검색어 출력 (같은 이름은 PK순) (페이지네이션으로 변경 예정)
+SELECT *
+FROM (
+    SELECT 
+        I.ITEM_PK,
+        I.ITEM_NAME,
+        I.ITEM_PRICE,
+        I.ITEM_STOCK,
+        I.ITEM_DESCRIPTION,
+        I.ITEM_IMAGE_URL,
+        NVL(ROUND(AVG(R.REVIEW_STAR), 2), 0) AS AVG_STAR,
+        COUNT(*) OVER() AS TOTAL_COUNT,  -- 전체 행 수
+        ROW_NUMBER() OVER (
+            ORDER BY (CASE WHEN ITEM_STOCK = 0 THEN 1 ELSE 0 END), I.ITEM_PK DESC
+        ) AS RN
+    FROM ITEM I
+    LEFT JOIN REVIEW R
+        ON I.ITEM_PK = R.ITEM_PK
+    WHERE I.ITEM_NAME LIKE '%고양이%'
+    GROUP BY 
+        I.ITEM_PK,
+        I.ITEM_NAME,
+        I.ITEM_PRICE,
+        I.ITEM_STOCK,
+        I.ITEM_DESCRIPTION,
+        I.ITEM_IMAGE_URL
+) 
+WHERE RN BETWEEN ? AND ?;
+
+
+-- 평점 높은순으로 출력 ) 평점이 같을 때는 리뷰 많은 순으로 출력
+SELECT
+    ITEM_PK,
+    ITEM_NAME,
+    ITEM_PRICE,
+    REVIEW_COUNT,
+    AVG_STAR,
+    TOTAL_COUNT
+FROM (
+    SELECT 
+        I.ITEM_PK,
+        I.ITEM_NAME,
+        I.ITEM_PRICE,
+        COUNT(R.REVIEW_PK) AS REVIEW_COUNT, -- 리뷰 개수 
+        NVL(ROUND(AVG(R.REVIEW_STAR), 2), 0) AS AVG_STAR, -- 별점 평균
+        COUNT(*) OVER() AS TOTAL_COUNT,  -- 전체 행 수
+        ROW_NUMBER() OVER (
+            ORDER BY 
+                (CASE WHEN I.ITEM_STOCK = 0 THEN 1 ELSE 0 END),
+                NVL(ROUND(AVG(R.REVIEW_STAR), 2), 0) DESC,
+                COUNT(R.REVIEW_PK) DESC,
+                I.ITEM_PK DESC
+        ) AS RN
+    FROM ITEM I
+    LEFT JOIN REVIEW R
+        ON I.ITEM_PK = R.ITEM_PK
+    GROUP BY 
+        I.ITEM_PK,
+        I.ITEM_NAME,
+        I.ITEM_PRICE,
+        I.ITEM_STOCK
+)
+WHERE RN BETWEEN ? AND ?;  
+
+
+-- 상품 상세보기 pk 
+SELECT 
+    I.ITEM_PK,
+    I.ITEM_NAME,
+    I.ITEM_PRICE,
+    I.ITEM_STOCK,
+    I.ITEM_DESCRIPTION,
+    I.ITEM_IMAGE_URL,
+    NVL(ROUND(AVG(R.REVIEW_STAR)), 0) AS AVG_STAR -- 평점 평균
+FROM ITEM I
+LEFT JOIN REVIEW R
+    ON I.ITEM_PK = R.ITEM_PK
+WHERE I.ITEM_PK = ?
+GROUP BY 
+    I.ITEM_PK,
+    I.ITEM_NAME,
+    I.ITEM_PRICE,
+    I.ITEM_STOCK,
+    I.ITEM_DESCRIPTION,
+    I.ITEM_IMAGE_URL;
+
+--  상품 구매시 재고 감소 (재고 없으면 false)
+UPDATE ITEM
+SET ITEM_STOCK = ITEM_STOCK - ?
+WHERE ITEM_PK = ?;
+
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '유광볼 150mm 실버', 7500, 10, '유광볼 150mm 실버 [1P]', '/images/item01.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '유광볼 150mm 레드', 7500, 5, '유광볼 150mm 레드 [1P]', '/images/item02.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '유광볼 60mm/80mm 골드', 3900, 0, '유광볼 60mm/80mm 골드 [6입]', '/images/item03.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '최고급 밀키볼 골드 비즈장식', 9900, 0, '최고급 밀키볼 골드 비즈장식 8CM 3P', '/images/item04.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '우드 버튼장식_별' , 1900, 7, '우드 버튼장식_별', '/images/item05.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '마_솔방울 트리', 2500, 10, '마_솔방울 트리', '/images/item06.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '마_눈사람트리', 2500, 10, '마_눈사람트리', '/images/item07.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '투명볼 레드장화', 3000, 10, '투명볼 레드장화', '/images/item08.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '미니 스커트싼타 체크', 2000, 10, '미니 스커트싼타 체크', '/images/item09.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '미니 빨간리본 곰돌이', 1900, 10, '미니 빨간리본 곰돌이 2입', '/images/item10.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '별_솔잎장식', 4500, 5, '별_솔잎장식2입_G', '/images/item11.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '별_솔잎장식', 2500, 3, '별_솔잎장식2입_G', '/images/item12.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '장식 볼 세트 골드 스노우맨', 29800, 6, '홈트너 크리스마스 오너먼트 트리 꾸미기 데코 장식 볼 세트 골드 스노우맨 70pcs', '/images/item13.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '크리스마스장식 OP-08 투명볼', 13900, 4, '하우쎈스 크리스마스트리 오너먼트 시리즈 크리스마스장식 OP-08 투명볼 8cm 12개', '/images/item14.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '오렌지 곰돌이 빅벤 오너먼트', 9500, 7, '오렌지 곰돌이 빅벤 오너먼트 크리스마스 트리 장식', '/images/item15.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '레드 화이트 아크릴 볼 장식 소품', 1900, 11, '크리스마스 트리 오너먼트 꾸미기 세트 12종 레드 화이트 8cm 아크릴 볼 장식 소품', '/images/item16.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '크리스마스 트리 장식 철재', 6300, 15, '크리스마스 트리 장식 철재 1종 오너먼트 7cm 3색 택1', '/images/item17.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '크라운 유리 트리오너먼트', 2500, 2, '크라운 유리 트리오너먼트 행잉 오브제 크리스마스 트리 장식 소품', '/images/item18.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '리본 오너먼트 레드 벨벳 트리 장식', 4000, 2, '리본 오너먼트 레드 벨벳 트리 장식 통통 리본인형 소품', '/images/item19.jpg');
+
+INSERT INTO ITEM (ITEM_PK, ITEM_NAME, ITEM_PRICE, ITEM_STOCK, ITEM_DESCRIPTION, ITEM_IMAGE_URL) VALUES
+(ITEM_SEQ.NEXTVAL, '리본 불빛 오너먼트', 2500, 3, '크리스마스 리본 불빛 오너먼트', '/images/item20.jpg');
+
+SELECT * FROM ITEM;

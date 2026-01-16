@@ -1,0 +1,225 @@
+/*** Footer Start ***/
+/* 푸터 전체 배경 밝게 */
+.footer {
+    background-color: #f9f9f9 !important;
+    color: #000000 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 푸터 안 제목, 텍스트, 링크 */
+.footer h4,
+.footer p,
+.footer a,
+.footer .footer-item {
+    color: #000000 !important;
+}
+
+/* 링크 hover */
+.footer a:hover {
+    color: #222222 !important;
+    text-decoration: none;
+}
+
+/* 아이콘 색상 통일 */
+.footer .fas,
+.footer .far,
+.footer .fab {
+    color: #000000 !important;
+    transition: color 0.3s;
+}
+
+.footer .fas:hover,
+.footer .far:hover,
+.footer .fab:hover {
+    color: #222222 !important;
+}
+
+/* 폼 컨트롤 */
+.footer .form-control {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #ccc !important;
+}
+
+/* 버튼 – 기본/hover */
+.footer .btn,
+.footer .btn-primary,
+.footer .btn-secondary,
+.footer .btn-custom {
+    background-color: #e0e0e0 !important;
+    color: #000000 !important;
+    border: none !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .btn:hover,
+.footer .btn-primary:hover,
+.footer .btn-secondary:hover,
+.footer .btn-custom:hover {
+    background-color: #d0d0d0 !important;
+    color: #000000 !important;
+}
+
+/* div.container */
+.div.container {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+.container-fluid.copyright {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+
+
+/*** Footer Start ***/
+/* 푸터 전체 배경 밝게 */
+.footer {
+    background-color: #f9f9f9 !important; /* 밝은 배경 */
+    color: #000000 !important;           /* 글씨 검정 */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 푸터 안 제목, 텍스트, 링크 */
+.footer h4,
+.footer p,
+.footer a,
+.footer .footer-item {
+    color: #000000 !important;           /* 검정 글씨 */
+}
+
+
+/* 링크 hover */
+.footer a:hover {
+    color: #222222 !important;           /* 살짝 진한 검정 */
+    text-decoration: none;
+}
+
+/* 아이콘 색상 통일 */
+.footer .fas,
+.footer .far,
+.footer .fab {
+    color: #000000 !important;           /* 아이콘 검정 */
+    transition: color 0.3s;
+}
+
+.footer .fas:hover,
+.footer .far:hover,
+.footer .fab:hover {
+    color: #222222 !important;           /* hover 시 진한 검정 */
+}
+
+/* 폼 컨트롤 */
+.footer .form-control {
+    background-color: #ffffff !important; /* 밝은 배경 */
+    color: #000000 !important;
+    border: 1px solid #ccc !important;
+}
+
+/* 버튼 – 기본/hover */
+.footer .btn,
+.footer .btn-primary,
+.footer .btn-secondary,
+.footer .btn-custom {
+    background-color: #e0e0e0 !important; /* 밝은 회색 버튼 */
+    color: #000000 !important;            /* 글씨 검정 */
+    border: none !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .btn:hover,
+.footer .btn-primary:hover,
+.footer .btn-secondary:hover,
+.footer .btn-custom:hover {
+    background-color: #d0d0d0 !important; /* hover 시 약간 더 진한 회색 */
+    color: #000000 !important;
+}
+
+
+
+
+
+
+
+
+/* 제목 */
+.footer-dark .footer-title {
+    color: #000000;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* 링크 */
+.footer-dark a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    transition: 0.3s;
+}
+
+/* 소셜 아이콘 */
+.footer-dark .social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.footer-dark .social-icons a:hover {
+    background-color: #d0d0d0;
+    color: #222222;
+}
+
+/* CS CENTER / info */
+.footer-dark .text-light {
+    color: #000000 !important;
+    font-size: 0.85rem;
+}
+/*** Footer End ***/
+
+
+
+
+
+
+
+
+
+/* Back to Top 버튼 연노랑으로 변경 */
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+
+    background-color: #FFF5CC !important;  /* 연노랑 */
+    color: #000000 !important;             /* 아이콘 검정 */
+    border: none !important;
+    border-radius: 50%;                    /* 원형으로 만들기 */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #FFE699 !important;  /* hover 시 조금 진한 연노랑 */
+    color: #000000 !important;             /* 아이콘 검정 유지 */
+}
+
